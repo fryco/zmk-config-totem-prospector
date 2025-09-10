@@ -47,6 +47,41 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+
+        td_dot_colon: td_dot_colon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_DOT_COLON";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD>, <&kp COLON>;
+        };
+
+        td_coma_colon: td_coma_colon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COMA_COLON";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp COLON>;
+        };
+
+        td_question_exclamation: td_question_exclamation {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_QUESTION_EXCLAMATION";
+            #binding-cells = <0>;
+            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+        };
+
+        td_slashes_pipe: td_slashes_pipe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SLASHES_PIPE";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp PIPE>, <&kp BACKSLASH>;
+        };
+
+        td_tilda_grave: td_tilda_grave {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_TILDA_GRAVE";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE>, <&kp GRAVE>;
+        };
     };
 
     combos {
@@ -58,46 +93,46 @@
         };
 
         combo_caps {
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&kp TAB>;
             key-positions = <11 10>;
         };
 
-        Bracket_left_normal {
+        combo_parenth_left {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <3 4>;
         };
 
-        Bracket_right {
+        combo_parenth_right {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <6 5>;
         };
 
-        Bracket_square_left {
+        combo_bracket_left {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <13 14>;
         };
 
-        Bracket_square_right {
+        combo_bracket_right {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <15 16>;
         };
 
-        Bracket_curly_left {
+        combo_curly_left {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <24 25>;
         };
 
-        Bracket_curly_right {
+        combo_curly_right {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <26 27>;
         };
 
-        Bracket_triangle_left {
+        combo_lt {
             bindings = <&kp LESS_THAN>;
             key-positions = <3 2>;
         };
 
-        Bracket_triangle_right {
+        combo_gt {
             bindings = <&kp GREATER_THAN>;
             key-positions = <6 7>;
         };
@@ -109,30 +144,30 @@
         Base {
             display-name = "Base";
             bindings = <
-           &kp Q        &kp W        &mt RA(E) E       &kp R               &kp T          &kp Y        &kp U             &kp I             &mt RA(O) O  &kp P
-           &mt RA(A) A  &mt RA(S) S  &kp D             &kp F               &kp G          &kp H        &kp J             &kp K             &mt RA(L) L  &kp SEMI
-&kp TILDE  &mt RA(Z) Z  &mt RA(X) X  &mt RA(C) C       &kp V               &kp B          &mt RA(N) N  &kp M             &kp COMMA         &kp DOT      &kp FSLH  &kp GRAVE
-                                     &mt LCTRL DELETE  &mt RALT BACKSPACE  &lt 1 SPACE    &lt 2 ENTER  &mt LEFT_GUI TAB  &mt LSHFT ESCAPE
+            &kp Q        &kp W        &mt RA(E) E       &kp R               &kp T          &kp Y        &kp U         &kp I           &mt RA(O) O    &kp P
+            &mt RA(A) A  &mt RA(S) S  &kp D             &kp F               &kp G          &kp H        &kp J         &kp K           &mt RA(L) L    &td_slashes_pipe
+&kp ESCAPE  &mt RA(Z) Z  &mt RA(X) X  &mt RA(C) C       &kp V               &kp B          &mt RA(N) N  &kp M         &td_coma_colon  &td_dot_colon  &td_question_exclamation  &td_tilda_grave
+                                      &mt LCTRL DELETE  &mt RALT BACKSPACE  &lt 1 SPACE    &lt 2 ENTER  &kp LEFT_GUI  &kp LSHFT
             >;
         };
 
         Nav {
             display-name = "Nav";
             bindings = <
-        &kp N1  &kp N2  &kp N3         &kp N4  &kp N5      &kp N6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-        &trans  &trans  &trans         &trans  &kp BSPC    &kp LEFT     &kp DOWN      &kp UP        &kp RIGHT     &kp ESC
-&kp F1  &kp F2  &kp F3  &kp F4         &kp F5  &kp F6      &kp F7       &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-                        &mt LCTRL DEL  &trans  &trans      &lt 3 ENTER  &trans        &trans
+        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+        &trans  &trans  &trans  &trans  &trans    &kp LEFT     &kp DOWN      &kp UP        &kp RIGHT     &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7       &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+                        &trans  &trans  &trans    &lt 3 ENTER  &trans        &trans
             >;
         };
 
         Sym {
             display-name = "Sym";
             bindings = <
-        &kp EXCL   &kp AT        &kp HASH         &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LPAR  &kp RPAR
-        &kp PSCRN  &kp C_PREV    &kp C_NEXT       &kp C_PP    &trans         &kp MINUS  &kp EQUAL      &kp LBKT   &kp RBKT  &kp BSLH
-&trans  &trans     &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE  &trans         &kp UNDER  &kp PLUS       &kp LBRC   &kp RBRC  &kp PIPE  &kp GRAVE
-                                 &trans           &trans      &lt 3 SPACE    &trans     &trans         &trans
+        &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LPAR  &kp RPAR
+        &trans    &trans  &trans    &trans      &trans         &kp MINUS  &kp EQUAL      &kp LBKT   &kp RBKT  &kp BSLH
+&trans  &trans    &trans  &trans    &trans      &trans         &kp UNDER  &kp PLUS       &kp LBRC   &kp RBRC  &kp PIPE  &kp GRAVE
+                          &trans    &trans      &lt 3 SPACE    &trans     &trans         &trans
             >;
         };
 
