@@ -178,6 +178,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "Fun";
         };
     };
 };
