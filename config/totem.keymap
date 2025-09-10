@@ -26,13 +26,7 @@
     quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
-};
-
-&lt {
-    tapping-term-ms = <240>;
-    flavor = "balanced";
-    quick-tap-ms = <150>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -92,7 +86,7 @@
             key-positions = <0 1>;
         };
 
-        combo_caps {
+        combo_tab {
             bindings = <&kp TAB>;
             key-positions = <11 10>;
         };
@@ -135,6 +129,11 @@
         combo_gt {
             bindings = <&kp GREATER_THAN>;
             key-positions = <6 7>;
+        };
+
+        combo_caps {
+            bindings = <&kp CAPS>;
+            key-positions = <21 22>;
         };
     };
 
