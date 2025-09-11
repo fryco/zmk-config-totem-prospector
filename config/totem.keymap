@@ -48,6 +48,8 @@
             label = "TD_DOT_COLON";
             #binding-cells = <0>;
             bindings = <&kp PERIOD>, <&kp COLON>;
+
+            tapping-term-ms = <300>;
         };
 
         td_coma_scolon: td_coma_scolon {
@@ -55,6 +57,8 @@
             label = "TD_COMA_SCOLON";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
+
+            tapping-term-ms = <300>;
         };
 
         td_que_excl: td_que_excl {
@@ -62,6 +66,8 @@
             label = "TD_QUE_EXCL";
             #binding-cells = <0>;
             bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+
+            tapping-term-ms = <300>;
         };
 
         td_slashes_pipe: td_slashes_pipe {
@@ -69,6 +75,8 @@
             label = "TD_SLASHES_PIPE";
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp PIPE>, <&kp BACKSLASH>;
+
+            tapping-term-ms = <300>;
         };
 
         td_tilda_grave: td_tilda_grave {
@@ -76,6 +84,8 @@
             label = "TD_TILDA_GRAVE";
             #binding-cells = <0>;
             bindings = <&kp TILDE>, <&kp GRAVE>;
+
+            tapping-term-ms = <300>;
         };
 
         td_aa: td_aa {
@@ -83,6 +93,8 @@
             label = "TD_AA";
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp RA(A)>;
+
+            tapping-term-ms = <300>;
         };
 
         td_ss: td_ss {
@@ -90,6 +102,8 @@
             label = "TD_SS";
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp RA(S)>;
+
+            tapping-term-ms = <300>;
         };
 
         td_zz: td_zz {
@@ -97,6 +111,8 @@
             label = "TD_ZZ";
             #binding-cells = <0>;
             bindings = <&kp Z>, <&kp RA(Z)>;
+
+            tapping-term-ms = <300>;
         };
 
         td_xx: td_xx {
@@ -104,6 +120,8 @@
             label = "TD_XX";
             #binding-cells = <0>;
             bindings = <&kp X>, <&kp RA(X)>;
+
+            tapping-term-ms = <300>;
         };
 
         td_ee: td_ee {
@@ -111,6 +129,8 @@
             label = "TD_EE";
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp RA(E)>;
+
+            tapping-term-ms = <300>;
         };
 
         td_cc: td_cc {
@@ -118,6 +138,8 @@
             label = "TD_CC";
             #binding-cells = <0>;
             bindings = <&kp C>, <&kp RA(C)>;
+
+            tapping-term-ms = <300>;
         };
 
         td_nn: td_nn {
@@ -125,6 +147,8 @@
             label = "TD_NN";
             #binding-cells = <0>;
             bindings = <&kp N>, <&kp RA(N)>;
+
+            tapping-term-ms = <300>;
         };
 
         td_oo: td_oo {
@@ -132,6 +156,8 @@
             label = "TD_OO";
             #binding-cells = <0>;
             bindings = <&kp O>, <&kp RA(O)>;
+
+            tapping-term-ms = <300>;
         };
 
         td_ll: td_ll {
@@ -139,6 +165,8 @@
             label = "TD_LL";
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp RA(L)>;
+
+            tapping-term-ms = <300>;
         };
 
         td_min_under: td_min_under {
@@ -146,6 +174,8 @@
             label = "TD_MIN_UNDER";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp LS(MINUS)>;
+
+            tapping-term-ms = <300>;
         };
     };
 
