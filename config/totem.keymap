@@ -219,10 +219,10 @@
         Base {
             display-name = "Base";
             bindings = <
-                 &kp Q   &kp W   &td_ee            &kp R               &kp T          &kp Y        &kp U           &kp I            &td_oo         &kp P
-                 &td_aa  &td_ss  &kp D             &kp F               &kp G          &kp H        &kp J           &kp K            &td_ll         &td_slashes_pipe
-&td_tilda_grave  &td_zz  &td_xx  &td_cc            &kp V               &kp B          &td_nn       &kp M           &td_coma_scolon  &td_dot_colon  &td_que_excl      &td_min_under
-                                 &mt LCTRL DELETE  &mt RALT BACKSPACE  &lt 2 SPACE    &lt 1 ENTER  &kp LEFT_SHIFT  &kp LEFT_GUI
+                 &kp Q   &kp W   &td_ee            &kp R                   &kp T          &kp Y        &kp U           &kp I            &td_oo         &kp P
+                 &td_aa  &td_ss  &kp D             &kp F                   &kp G          &kp H        &kp J           &kp K            &td_ll         &td_slashes_pipe
+&td_tilda_grave  &td_zz  &td_xx  &td_cc            &kp V                   &kp B          &td_nn       &kp M           &td_coma_scolon  &td_dot_colon  &td_que_excl      &td_min_under
+                                 &mt LCTRL DELETE  &mt LEFT_GUI BACKSPACE  &lt 2 SPACE    &lt 1 ENTER  &kp LEFT_SHIFT  &kp LEFT_ALT
             >;
         };
 
