@@ -32,24 +32,13 @@
 
 / {
     behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-
         td_dot_colon: td_dot_colon {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_DOT_COLON";
             #binding-cells = <0>;
             bindings = <&kp PERIOD>, <&kp COLON>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_coma_scolon: td_coma_scolon {
@@ -58,7 +47,7 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_que_excl: td_que_excl {
@@ -67,7 +56,7 @@
             #binding-cells = <0>;
             bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_slashes_pipe: td_slashes_pipe {
@@ -76,7 +65,7 @@
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp PIPE>, <&kp BACKSLASH>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_tilda_grave: td_tilda_grave {
@@ -85,7 +74,7 @@
             #binding-cells = <0>;
             bindings = <&kp TILDE>, <&kp GRAVE>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_aa: td_aa {
@@ -94,7 +83,7 @@
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp RA(A)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_ss: td_ss {
@@ -103,7 +92,7 @@
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp RA(S)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_zz: td_zz {
@@ -112,7 +101,7 @@
             #binding-cells = <0>;
             bindings = <&kp Z>, <&kp RA(Z)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_xx: td_xx {
@@ -121,7 +110,7 @@
             #binding-cells = <0>;
             bindings = <&kp X>, <&kp RA(X)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_ee: td_ee {
@@ -130,7 +119,7 @@
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp RA(E)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_cc: td_cc {
@@ -139,7 +128,7 @@
             #binding-cells = <0>;
             bindings = <&kp C>, <&kp RA(C)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_nn: td_nn {
@@ -148,7 +137,7 @@
             #binding-cells = <0>;
             bindings = <&kp N>, <&kp RA(N)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_oo: td_oo {
@@ -157,7 +146,7 @@
             #binding-cells = <0>;
             bindings = <&kp O>, <&kp RA(O)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_ll: td_ll {
@@ -166,7 +155,7 @@
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp RA(L)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
 
         td_min_under: td_min_under {
@@ -175,7 +164,7 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp LS(MINUS)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <270>;
         };
     };
 
