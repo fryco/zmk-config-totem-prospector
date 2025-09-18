@@ -12,7 +12,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20
@@ -238,20 +237,20 @@
         Base {
             display-name = "Base";
             bindings = <
-                 &kp Q   &kp W   &td_ee            &kp R                   &kp T          &kp Y        &kp U           &kp I            &td_oo         &kp P
-                 &td_aa  &td_ss  &kp D             &kp F                   &kp G          &kp H        &kp J           &kp K            &td_ll         &td_slashes_pipe
-&td_tilda_grave  &td_zz  &td_xx  &td_cc            &kp V                   &kp B          &td_nn       &kp M           &td_coma_scolon  &td_dot_colon  &td_que_excl      &td_min_under
-                                 &mt LCTRL DELETE  &mt LEFT_GUI BACKSPACE  &lt 2 SPACE    &lt 1 ENTER  &kp LEFT_SHIFT  &kp LEFT_ALT
+                 &kp Q  &kp W  &kp E             &kp R                   &kp T          &kp Y        &kp U           &kp I            &kp O          &kp P
+                 &kp A  &kp S  &kp D             &kp F                   &kp G          &kp H        &kp J           &kp K            &kp L          &td_slashes_pipe
+&td_tilda_grave  &kp Z  &kp X  &kp C             &kp V                   &kp B          &kp N        &kp M           &td_coma_scolon  &td_dot_colon  &td_que_excl      &td_min_under
+                               &mt LCTRL DELETE  &mt LEFT_GUI BACKSPACE  &lt 2 SPACE    &lt 1 ENTER  &kp LEFT_SHIFT  &kp LEFT_ALT
             >;
         };
 
         Nav {
             display-name = "Nav";
             bindings = <
-        &kp N1        &kp N2    &kp N3        &kp N4     &kp N5         &kp END   &kp PAGE_DOWN   &kp PAGE_UP   &kp HOME   &trans
-        &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0         &kp LEFT  &kp DOWN        &kp UP        &kp RIGHT  &trans
-&trans  &kp MINUS     &kp PLUS  &kp ASTERISK  &kp SLASH  &trans         &trans    &msc SCRL_DOWN  &msc SCRL_UP  &trans     &trans  &trans
-                                &trans        &trans     &lt 3 SPACE    &trans    &trans          &trans
+        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5         &kp NUMBER_6   &kp N7    &kp N8    &kp N9       &kp N0
+        &trans  &trans  &trans  &trans  &trans         &kp LEFT       &kp DOWN  &kp UP    &kp RIGHT    &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &kp PAGE_DOWN  &kp END   &kp HOME  &kp PAGE_UP  &trans  &kp PRINTSCREEN
+                        &trans  &trans  &lt 3 SPACE    &trans         &trans    &trans
             >;
         };
 
